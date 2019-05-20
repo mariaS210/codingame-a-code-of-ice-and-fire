@@ -188,20 +188,20 @@ void compute_next_move()
         if (my_hq.x == 0)
         {
             if (commands.find("TRAIN 0 1") != 0)
-                commandTrain(gold / 10, position(0, 1));
+                commandTrain(1, position(0, 1));
             else if (commands.find("TRAIN 1 0") != 0)
-                commandTrain(gold / 10, position(1, 0));
+                commandTrain(1, position(1, 0));
             else
-                commandTrain(gold / 10, position(0, 1));
+                commandTrain(1, position(0, 1));
         }
         else
         {
             if (commands.find("TRAIN 11 10") != 0)
-                commandTrain(gold / 10, position(11, 10));
+                commandTrain(1, position(11, 10));
             else if (commands.find("TRAIN 10 11") != 0)
-                commandTrain(gold / 10, position(10, 11));
+                commandTrain(1, position(10, 11));
             else
-                commandTrain(gold / 10, position(11, 10));
+                commandTrain(1, position(11, 10));
         }
     }
 
